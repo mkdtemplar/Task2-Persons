@@ -4,10 +4,9 @@ public class TestClass
     {
         Person ppl[] = new Person[10];
         
-        ppl[0] = new Person();
-        ppl[1] = new Student(  );
+        ppl[0] = new Person("Ivan", "mail@mail.com", 46);
+        ppl[1] = new Student(  "Ivan", "mail@mail.com", 46);
         ppl[2] = new Plumber(  );
-        
         ppl[3] = new Student();
         ppl[4] = new Student();
         ppl[5] = new Student();
@@ -16,8 +15,5 @@ public class TestClass
         ppl[8] = new Teacher();
         ppl[9] = new Teacher();
         
-        for ( int i = 2; i < ppl.length;i++ ){
-            if ( ppl[i].)
-        }
     }
 }

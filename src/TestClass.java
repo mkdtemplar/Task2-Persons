@@ -28,12 +28,19 @@ public class TestClass
                 System.out.println (person);
             }
             
-            if ( person instanceof Teacher )
+            if ( person instanceof Teacher && person instanceof Student )
             {
                 Teacher teacher = (Teacher ) person;
-                if ( teacher.getRating () > 8 )
+                Student student = (Student ) person;
+                if ( teacher.getRating () > 8 && student.getAvgrade () > 8)
                 {
                     System.out.println (teacher);
+                    System.out.println (student);
+                }
+                
+                if ( teacher.getInterest () == student.getInterest () )
+                {
+                    System.out.println (teacher + " " + student);
                 }
             }
         }

@@ -53,4 +53,15 @@ public  class Person
         
         return (int)(Math.random() * range) + min;
     }
+    
+    @Override
+    public String toString ()
+    {
+        
+        return "Person{" +
+                       "Name='" + Name + '\'' +
+                       ", Email='" + Email + '\'' +
+                       ", Age=" + Age +
+                       '}';
+    }
 }

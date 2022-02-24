@@ -37,4 +37,18 @@ public class Teacher extends Person implements AcademicInterest, Worker
     {
         return String.format(super.identify() + " Is Teacher");
     }
+    
+    @Override
+    public String toString ()
+    {
+        
+        return "Teacher{" +
+                       "Name='" + Name + '\'' +
+                       ", Email='" + Email + '\'' +
+                       ", Age=" + Age +
+                       ", rating=" + rating +
+                       ", salary=" + getSalary () +
+                       ", interest='" + interest + '\'' +
+                       "} ";
+    }
 }

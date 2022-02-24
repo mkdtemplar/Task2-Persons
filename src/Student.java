@@ -20,4 +20,17 @@ public class Student extends Person implements AcademicInterest
         
         return interest;
     }
+    
+    @Override
+    public String toString ()
+    {
+        
+        return "Student{" +
+                       "Name='" + Name + '\'' +
+                       ", Email='" + Email + '\'' +
+                       ", Age=" + Age +
+                       ", avgrade=" + avgrade +
+                       ", interest='" + interest + '\'' +
+                       "} ";
+    }
 }

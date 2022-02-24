@@ -20,5 +20,13 @@ public class TestClass
         System.out.println (ppl[2].identify ());
         System.out.println (ppl[6].identify ());
         System.out.println (ppl[1].identify ());
+        
+        for ( Person person : ppl )
+        {
+            if ( person.getSalary () > 20000 )
+            {
+                System.out.println (person);
+            }
+        }
     }
 }

@@ -38,6 +38,6 @@ public class Plumber extends Person implements Worker
                        "Name='" + Name + '\'' +
                        ", Email='" + Email + '\'' +
                        ", Age=" + getAge () +
-                       "} " + super.toString () + " Salary: " + getSalary ();
+                       "} " + " Salary: " + getSalary ();
     }
 }

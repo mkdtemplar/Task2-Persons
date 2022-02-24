@@ -2,7 +2,7 @@ public class TestClass
 {
     public static void main( String[] args )
     {
-        Person ppl[] = new Person[10];
+        Person[] ppl = new Person[10];
         
         ppl[0] = new Person("Ivan", "mail@mail.com", 46);
         ppl[1] = new Student(  "Ivan", "mail@mail.com", 46, "Java");
@@ -27,6 +27,17 @@ public class TestClass
             {
                 System.out.println (person);
             }
+            
+            if ( person instanceof Teacher )
+            {
+                Teacher teacher = (Teacher ) person;
+                if ( teacher.getRating () > 8 )
+                {
+                    System.out.println (teacher);
+                }
+            }
         }
+        
+        
     }
 }

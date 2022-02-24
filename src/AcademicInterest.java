@@ -1,4 +1,4 @@
 public interface AcademicInterest
 {
-    String[] getInterest( String... subject);
+    String getInterest();
 }

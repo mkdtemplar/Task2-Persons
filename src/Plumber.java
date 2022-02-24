@@ -1,10 +1,17 @@
 public class Plumber extends Person implements Worker
 {
     int salary;
-    public Plumber( String name, String email, int age, int salary )
+    public Plumber ( String name, String email, int age)
     {
         super( name, email, age );
-        this.salary = salary;
+        this.salary = getSalary ();
+    }
+    
+    @Override
+    public int getAge ()
+    {
+        
+        return super.getAge ();
     }
     
     @Override
@@ -21,5 +28,16 @@ public class Plumber extends Person implements Worker
         int range = max - min + 1;
     
         return (int)(Math.random() * range) + min;
+    }
+    
+    @Override
+    public String toString ()
+    {
+        
+        return "Plumber{" +
+                       "Name='" + Name + '\'' +
+                       ", Email='" + Email + '\'' +
+                       ", Age=" + getAge () +
+                       "} " + super.toString () + " Salary: " + getSalary ();
     }
 }

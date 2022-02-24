@@ -1,10 +1,14 @@
 public class Teacher extends Person implements AcademicInterest, Worker
 {
-    int rating;
-    public Teacher( String name, String email, int age )
+    private int rating;
+    private int salary;
+    private String interest;
+    public Teacher( String name, String email, int age,  String interest)
     {
         super( name, email, age );
         this.rating = (int)(((Math.random() * 100 % 5)) + 5);
+        this.salary = getSalary ();
+        this.interest = interest;
     }
     
     public int getRating()
@@ -13,9 +17,9 @@ public class Teacher extends Person implements AcademicInterest, Worker
     }
     
     @Override
-    public String[] getInterest( String... subject )
+    public String getInterest ()
     {
-        return new String[ 0 ];
+        return interest;
     }
     
     @Override

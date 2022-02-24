@@ -45,4 +45,12 @@ public  class Person
     {
         return String.format("Name: %s%nEmail: %s%nAge: %d%n", getName(),getEmail(),getAge());
     }
+    public int getSalary()
+    {
+        int max = 90000;
+        int min = 20000;
+        int range = max - min + 1;
+        
+        return (int)(Math.random() * range) + min;
+    }
 }

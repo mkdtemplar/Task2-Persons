@@ -1,11 +1,12 @@
 public class Student extends Person implements AcademicInterest
 {
     int avgrade;
-    
-    public Student( String name, String email, int age)
+    String interest;
+    public Student( String name, String email, int age, String interest)
     {
         super( name, email, age );
         this.avgrade = (int)(((Math.random() * 100 % 5)) + 5);
+        this.interest = interest;
     }
     
     public int getAvgrade()
@@ -13,13 +14,10 @@ public class Student extends Person implements AcademicInterest
         return avgrade;
     }
     
-    
     @Override
-    public String[] getInterest( String... subject )
+    public String getInterest ()
     {
-        subject[0] = "Java";
-        subject[1] = "Management";
-        subject[2] = "Finance";
-        return subject;
+        
+        return interest;
     }
 }
